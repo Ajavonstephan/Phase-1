@@ -1,0 +1,134 @@
+192.0.2.10
+192.0.2.25
+192.0.2.88
+192.0.2.111
+198.51.100.12
+198.51.100.44
+198.51.100.90
+198.51.100.200
+203.0.113.7
+203.0.113.35
+203.0.113.150
+203.0.113.240
+2001:db8::1
+2001:db8::25
+2001:db8:1::10
+2001:db8:abcd::1234
+2001:db8:ffff::99
+alpha.example.com
+cdn.example.com
+login.example.net
+files.example.org
+updates.example.com
+api.example.net
+mail.example.org
+portal.example.com
+download.example.net
+status.example.org
+https://alpha.example.com/login
+http://cdn.example.com/update.bin
+https://login.example.net/account/verify
+http://files.example.org/archive.zip
+https://updates.example.com/api/v1/check
+https://api.example.net/v2/status
+http://mail.example.org/webmail/index.html
+https://portal.example.com/auth
+http://192.0.2.44/payload.bin
+https://198.51.100.23:8443/check-in
+49cb72ffd78d6c97d4c351323cb99067
+ef050b529cda8c4f5932913a20feadf8
+79c631a4cbfa4f4ed3d6cec3e0307c14
+cbf8672c1df7974772def5f36259757e
+89e4d7e7daea293c005b2afd1eaeebb4
+4fb265a8f6449c20df729d79f09e2d15
+b7ba37cd65b4b0a8a2f290ec509bed49
+71e25bed39987b1e2e41a47bd2658865
+427cf215fa66a5967f3abe21e7bea35af825074d
+9fb1eca63d979dff993d5475435ceca4f0e18047
+6b080cca78ea020cdb7d8e7390faa50426b89298
+4af08603952fe51edba85e8f2ee8ab8fdfc96aed
+1e2cfd70f090356f1639f6b0b87ad268e4673192
+a1aa73decd425eb85a1d8519dd88571e6a40b353
+9ecc8ccad81eaa87769854babb59c164e3c2cf2aa64ea2e172f2dadd4cfafaba
+7f1d21dc13533abfb6c8bd7ab025f8ae37ea5b1260ad9779daa5f5ec776785d9
+2be0b6b352526199f2d4ab3de9cdc08825d272dc94ee6f561e97040f59364899
+f75d735a28d08c20bf6e4aa538258acebafab4cf581c253c48d02c1f9a7264a8
+29ab7d6378a7e5d9f326a3f3eb39fdd557c488a979585652719bfb7cbfd022df
+a824d65fc22b8f5e8f2814470f09ad055932d2d564c7863e13409e53e83fd9a9
+c4f8d0a5e64dd775aa8f365148c91b763fca66d46695ae7a2e7fa4197e642606
+83abf422c5fcec32b451d1a94d3babcba3c21096aa43a428952358b32f934c46
+analyst@example.com
+alerts@example.net
+support@example.org
+security-team@example.com
+test.user@example.net
+00:11:22:33:44:55
+AA:BB:CC:DD:EE:FF
+02:00:5E:10:00:01
+CVE-2024-12345
+CVE-2023-45678
+CVE-2022-98765
+=== SECURITY INCIDENT REPORT - INC-2026-X99 ===
+Date: 2026-10-09
+Severity: CRITICAL
+Investigator: SOC Analyst Lead
+
+1. PHISHING CAMPAIGN DETAILS
+An incoming email campaign was detected bypassing perimeter filters.
+Sender Email: threat-actor@darknet-group.org
+Return-Path Email: bounce-handler@phishing-alert.com
+Target User: victim.user@company-local.internal
+Subject: Urgent Security Update Required
+
+2. SUSPICIOUS URLS AND DOMAINS IDENTIFIED
+The email contained several embedded links directing users to rogue sites:
+- Primary Phishing Portal: http://phishing-portal.com/login.php
+- Secondary Fake Gateway: https://secure-login-bank.com/auth/verify.php
+- Malware Staging Server: http://malicious-site.org/downloads/payload.exe
+- Exfiltration Domain: exfil-node.ru
+- Backup Command & Control Domain: c2-nexus-server.net
+
+3. NETWORK INFRASTRUCTURE & IP ADDRESSES
+Traffic capture shows active communication with external malicious endpoints:
+- Primary C2 Address: 198.51.100.99 (Public IP)
+- Secondary Relay Node: 203.0.113.150 (Public IP)
+- Scan Source IP: 185.220.101.5 (Public IP)
+- Scanning Host IP: 198.51.100.77 (Public IP)
+- Darknet Gateway: 45.33.32.156 (Public IP)
+
+Internal Hosts Affected (Note: These private IPs must be ignored by IOCatcher):
+- Host Workstation 1: 192.168.1.105 (Private IP)
+- Host Workstation 2: 10.0.0.50 (Private IP)
+- Internal Domain Controller: 172.16.0.1 (Private IP)
+- Localhost Interface: 127.0.0.1 (Loopback)
+
+4. MALWARE ARTIFACTS AND FILE HASHES
+The dropped binary stage1.exe was analyzed in the sandbox environment.
+
+MD5 Hashes:
+- Payload Dropper: e1c723b7be54b423377284f183748231
+- Encrypted Loader: 5d41402abc4b2a76b9719d911017c592
+- Config Dump: 098f6bcd4621d373cade4e832627b4f6
+
+SHA1 Hashes:
+- Main Process Injection: 2fd4e1c67a2d28fced849ee1bb76e7391b93eb12
+- DLL Side-Loading Module: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+
+SHA256 Hashes:
+- Full Binary Sample: 8f3c3a27a8291201d4182f093128491d90231a48123019231842109312849102
+- Persistence Payload: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+5. EXFILTRATION & CONTACT CHANNELS
+The ransomware note dropped in C:\Users\Public\READ_ME.txt specifies:
+- Ransom Contact Email: payment-support@ransom-group.biz
+- Alternative Contact Email: dropzone@c2-nexus.org
+- Support Portal URL: http://evil-gateway.io/portal/ticket.php
+- Tor Payment Domain: darkmarket-pay.onion
+
+6. SOC ACTION PLAN
+- Block IP 203.0.113.88 on perimeter firewalls.
+- Revoke API tokens associated with admin-sec@phishing-alert.com.
+- Perform memory dump on 192.168.1.105.
+- Update YARA signatures for SHA256 8f3c3a27a8291201d4182f093128491d90231a48123019231842109312849102.
+
+=== END OF INCIDENT REPORT ===

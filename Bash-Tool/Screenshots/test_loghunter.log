@@ -1,0 +1,69 @@
+Oct 9 08:00:01 server sshd[1020]: Accepted publickey for sysadmin from 192.168.1.10 port 41102 ssh2
+Oct 9 08:01:15 server sshd[1025]: Server listening on 0.0.0.0 port 22.
+Oct 9 08:05:12 server sshd[1044]: Failed password for invalid user admin from 198.51.100.45 port 51230 ssh2
+Oct 9 08:05:14 server sshd[1044]: Failed password for invalid user admin from 198.51.100.45 port 51232 ssh2
+Oct 9 08:05:16 server sshd[1044]: Failed password for invalid user admin from 198.51.100.45 port 51234 ssh2
+Oct 9 08:05:18 server sshd[1044]: Failed password for root from 198.51.100.45 port 51236 ssh2
+Oct 9 08:05:20 server sshd[1044]: Failed password for root from 198.51.100.45 port 51238 ssh2
+Oct 9 08:05:22 server sshd[1044]: Failed password for root from 198.51.100.45 port 51240 ssh2
+Oct 9 08:05:24 server sshd[1044]: Failed password for root from 198.51.100.45 port 51242 ssh2
+Oct 9 08:05:26 server sshd[1044]: Failed password for root from 198.51.100.45 port 51244 ssh2
+Oct 9 08:05:30 server sshd[1044]: Accepted password for root from 198.51.100.45 port 51246 ssh2
+Oct 9 08:12:01 server sshd[1105]: Failed password for oracle from 203.0.113.88 port 33100 ssh2
+Oct 9 08:12:03 server sshd[1105]: Failed password for oracle from 203.0.113.88 port 33102 ssh2
+Oct 9 08:12:05 server sshd[1105]: Failed password for postgres from 203.0.113.88 port 33104 ssh2
+Oct 9 08:12:07 server sshd[1105]: Failed password for postgres from 203.0.113.88 port 33106 ssh2
+Oct 9 08:12:09 server sshd[1105]: Failed password for user1 from 203.0.113.88 port 33108 ssh2
+Oct 9 08:12:11 server sshd[1105]: Failed password for user1 from 203.0.113.88 port 33110 ssh2
+Oct 9 08:12:13 server sshd[1105]: Failed password for test from 203.0.113.88 port 33112 ssh2
+Oct 9 08:15:01 server sshd[1120]: Failed password for invalid user guest from 45.33.32.156 port 40001 ssh2
+Oct 9 08:15:03 server sshd[1120]: Failed password for invalid user guest from 45.33.32.156 port 40002 ssh2
+Oct 9 08:15:05 server sshd[1120]: Failed password for invalid user guest from 45.33.32.156 port 40003 ssh2
+Oct 9 08:15:07 server sshd[1120]: Failed password for invalid user guest from 45.33.32.156 port 40004 ssh2
+Oct 9 08:15:09 server sshd[1120]: Failed password for invalid user guest from 45.33.32.156 port 40005 ssh2
+Oct 9 08:15:11 server sshd[1120]: Failed password for invalid user guest from 45.33.32.156 port 40006 ssh2
+Oct 9 08:20:00 server sshd[1200]: Accepted publickey for deployer from 10.0.0.15 port 42000 ssh2
+Oct 9 08:25:10 server sshd[1250]: Failed password for ubuntu from 185.220.101.5 port 55100 ssh2
+Oct 9 08:25:12 server sshd[1250]: Failed password for ubuntu from 185.220.101.5 port 55102 ssh2
+192.168.1.10 - - [09/Oct/2026:08:00:01 +0000] "GET /index.php HTTP/1.1" 200 4523 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+192.168.1.10 - - [09/Oct/2026:08:00:05 +0000] "GET /static/css/style.css HTTP/1.1" 200 1204 "-" "Mozilla/5.0"
+198.51.100.77 - - [09/Oct/2026:08:10:12 +0000] "GET /products.php?id=1%20UNION%20SELECT%201,username,password%20FROM%20users-- HTTP/1.1" 500 230 "-" "sqlmap/1.6#stable"
+198.51.100.77 - - [09/Oct/2026:08:10:15 +0000] "GET /../../../../etc/passwd HTTP/1.1" 400 180 "-" "Nikto/2.1.6"
+198.51.100.77 - - [09/Oct/2026:08:10:18 +0000] "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 209 "-" "Mozilla/5.0"
+198.51.100.77 - - [09/Oct/2026:08:10:20 +0000] "POST /wp-login.php HTTP/1.1" 401 512 "-" "Mozilla/5.0"
+198.51.100.77 - - [09/Oct/2026:08:10:22 +0000] "POST /wp-login.php HTTP/1.1" 401 512 "-" "Mozilla/5.0"
+198.51.100.77 - - [09/Oct/2026:08:10:25 +0000] "POST /wp-login.php HTTP/1.1" 200 3420 "-" "Mozilla/5.0"
+203.0.113.50 - - [09/Oct/2026:08:15:00 +0000] "GET /api/v1/status HTTP/1.1" 200 102 "-" "Go-http-client/1.1"
+185.220.101.5 - - [09/Oct/2026:08:30:01 +0000] "GET /admin/config.php?exec=eval(base64_decode) HTTP/1.1" 403 299 "-" "Custom-Scanner/1.0"
+185.220.101.5 - - [09/Oct/2026:08:31:10 +0000] "GET /download/payload.exe?hash=8f3c3a27a8291201d4182f093128491d90231a48123019231842109312849102&contact=attacker@darknet-group.org HTTP/1.1" 200 95420 "http://malicious-c2-server.com/index" "Mozilla/5.0"
+192.168.1.15 - - [09/Oct/2026:08:35:22 +0000] "GET /blog/posts/1 HTTP/1.1" 200 5410 "-" "Mozilla/5.0"
+Oct 9 07:12:01 server systemd[1]: Started Periodic Background Jobs.
+Oct 9 07:14:22 server kernel: [ 4512.1023] Out of memory: Kill process 1842 (mysqld) score 850 or sacrifice child
+Oct 9 07:14:23 server systemd[1]: mysql.service: Main process exited, code=killed, status=9/KILL
+Oct 9 07:14:23 server systemd[1]: mysql.service: Failed with result 'exit-code'.
+Oct 9 07:20:11 server kernel: [ 4861.4011] [WARNING] High CPU usage detected on core 0
+Oct 9 07:25:00 server CRON[3102]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Oct 9 07:30:15 server kernel: [ 5120.9011] [ALERT] Hardware error detected on disk sdb1
+Oct 9 08:40:00 server security-agent[4410]: [CRITICAL] Connection attempt to C2 domain http://c2-nexus-server.net/gate.php from host 192.168.1.105 (MD5: e1c723b7be54b423377284f183748231, Contact: admin-sec@phishing-alert.com)
+Oct 9 08:41:12 server mail-filter[1202]: [ALERT] Phishing email detected from threat-actor@darknet-group.org pointing to http://phishing-portal.com/login.php with target IP 198.51.100.99
+Oct 9 08:42:05 server security-agent[4410]: [CRITICAL] Malware execution detected. SHA1: 2fd4e1c67a2d28fced849ee1bb76e7391b93eb12 on endpoint 10.0.0.50
+Oct 9 08:00:01 server sshd[1020]: Accepted publickey for sysadmin from 192.168.1.10 port 41102 ssh2
+Oct 9 08:05:12 server sshd[1044]: Failed password for invalid user admin from 198.51.100.45 port 51230 ssh2
+Oct 9 08:05:14 server sshd[1044]: Failed password for invalid user admin from 198.51.100.45 port 51232 ssh2
+Oct 9 08:05:16 server sshd[1044]: Failed password for invalid user admin from 198.51.100.45 port 51234 ssh2
+Oct 9 08:05:18 server sshd[1044]: Failed password for root from 198.51.100.45 port 51236 ssh2
+Oct 9 08:05:20 server sshd[1044]: Failed password for root from 198.51.100.45 port 51238 ssh2
+Oct 9 08:05:22 server sshd[1044]: Failed password for root from 198.51.100.45 port 51240 ssh2
+Oct 9 08:05:24 server sshd[1044]: Failed password for root from 198.51.100.45 port 51242 ssh2
+Oct 9 08:05:26 server sshd[1044]: Failed password for root from 198.51.100.45 port 51244 ssh2
+Oct 9 08:05:30 server sshd[1044]: Accepted password for root from 198.51.100.45 port 51246 ssh2
+Oct 9 08:12:01 server sshd[1105]: Failed password for oracle from 203.0.113.88 port 33100 ssh2
+192.168.1.10 - - [09/Oct/2026:08:00:01 +0000] "GET /index.php HTTP/1.1" 200 4523 "-" "Mozilla/5.0"
+198.51.100.77 - - [09/Oct/2026:08:10:12 +0000] "GET /products.php?id=1%20UNION%20SELECT%201,username,password%20FROM%20users-- HTTP/1.1" 500 230 "-" "sqlmap/1.6#stable"
+198.51.100.77 - - [09/Oct/2026:08:10:15 +0000] "GET /../../../../etc/passwd HTTP/1.1" 400 180 "-" "Nikto/2.1.6"
+185.220.101.5 - - [09/Oct/2026:08:31:10 +0000] "GET /download/payload.exe?hash=8f3c3a27a8291201d4182f093128491d90231a48123019231842109312849102&contact=attacker@darknet-group.org HTTP/1.1" 200 95420 "http://malicious-c2-server.com/index" "Mozilla/5.0"
+Oct 9 07:14:22 server kernel: Out of memory: Kill process 1842 (mysqld) score 850
+Oct 9 07:14:23 server systemd[1]: mysql.service: Failed with result 'exit-code'.
+Oct 9 08:40:00 server security-agent[4410]: [CRITICAL] Connection attempt to C2 domain http://c2-nexus-server.net/gate.php from host 192.168.1.105 (MD5: e1c723b7be54b423377284f183748231, Contact: admin-sec@phishing-alert.com)
+Oct 9 08:41:12 server mail-filter[1202]: [ALERT] Phishing email detected from threat-actor@darknet-group.org pointing to http://phishing-portal.com/login.php with target IP 198.51.100.99
+

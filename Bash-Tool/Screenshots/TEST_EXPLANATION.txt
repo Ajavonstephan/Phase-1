@@ -1,0 +1,13 @@
+             LOGHUNTER - TEST EVIDENCE & METHODOLOGY
+
+This directory contains screenshot evidence validating the core functionalities 
+of the LogHunter script across two distinct datasets:
+
+1. LIVE SYSTEM-GENERATED DATA:
+   - Generated directly from the host operating system (Parrot OS) journal.
+   - File used: 'auth_local.log'
+   - Demonstrates real-world log parsing and detection of live authentication events.
+
+2. CUSTOM / MOCK DATASET (Handcrafted):
+   - Created manually to simulate specific SSH brute-force attack patterns and web request anomalies.
+   - File used: 'test_loghunter.log' (included in the Bash-Tool directory for testing reproducibility).

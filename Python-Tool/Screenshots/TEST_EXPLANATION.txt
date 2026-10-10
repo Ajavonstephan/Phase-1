@@ -1,0 +1,13 @@
+             IOCATCHER - TEST EVIDENCE & METHODOLOGY
+
+This directory contains screenshot evidence validating the core functionalities 
+of the IOCatcher script across two distinct datasets:
+
+1. LIVE SYSTEM-GENERATED DATA:
+   - Generated directly from the host operating system (Parrot OS) system log.
+   - File used: 'system_local.log'
+   - Demonstrates real-time IoC extraction, public IP filtering, and JSON output on actual system logs.
+
+2. CUSTOM / MOCK DATASET (Handcrafted):
+   - Created manually to contain a broad range of IoC types (Public/Private IPs, URLs, Domains, Hashes, Emails).
+   - File used: 'iocs.txt' (included in the Python-Tool directory for testing reproducibility).
